@@ -18,9 +18,6 @@ public class TableMediaRecordsId implements java.io.Serializable {
 	private Timestamp enterTime;
 	private String summary;
 	private String contentType;
-	private String year;
-	private String month;
-	private String day;
 
 	// Constructors
 
@@ -31,8 +28,7 @@ public class TableMediaRecordsId implements java.io.Serializable {
 	/** full constructor */
 	public TableMediaRecordsId(String id, String title, String keyWords,
 			String enterUserId, String enterUserName, Timestamp enterTime,
-			String summary, String contentType, String year, String month,
-			String day) {
+			String summary, String contentType) {
 		this.id = id;
 		this.title = title;
 		this.keyWords = keyWords;
@@ -41,9 +37,6 @@ public class TableMediaRecordsId implements java.io.Serializable {
 		this.enterTime = enterTime;
 		this.summary = summary;
 		this.contentType = contentType;
-		this.year = year;
-		this.month = month;
-		this.day = day;
 	}
 
 	// Property accessors
@@ -112,30 +105,6 @@ public class TableMediaRecordsId implements java.io.Serializable {
 		this.contentType = contentType;
 	}
 
-	public String getYear() {
-		return this.year;
-	}
-
-	public void setYear(String year) {
-		this.year = year;
-	}
-
-	public String getMonth() {
-		return this.month;
-	}
-
-	public void setMonth(String month) {
-		this.month = month;
-	}
-
-	public String getDay() {
-		return this.day;
-	}
-
-	public void setDay(String day) {
-		this.day = day;
-	}
-
 	public boolean equals(Object other) {
 		if ((this == other))
 			return true;
@@ -174,16 +143,7 @@ public class TableMediaRecordsId implements java.io.Serializable {
 				&& ((this.getContentType() == castOther.getContentType()) || (this
 						.getContentType() != null
 						&& castOther.getContentType() != null && this
-						.getContentType().equals(castOther.getContentType())))
-				&& ((this.getYear() == castOther.getYear()) || (this.getYear() != null
-						&& castOther.getYear() != null && this.getYear()
-						.equals(castOther.getYear())))
-				&& ((this.getMonth() == castOther.getMonth()) || (this
-						.getMonth() != null && castOther.getMonth() != null && this
-						.getMonth().equals(castOther.getMonth())))
-				&& ((this.getDay() == castOther.getDay()) || (this.getDay() != null
-						&& castOther.getDay() != null && this.getDay().equals(
-						castOther.getDay())));
+						.getContentType().equals(castOther.getContentType())));
 	}
 
 	public int hashCode() {
@@ -210,12 +170,6 @@ public class TableMediaRecordsId implements java.io.Serializable {
 				* result
 				+ (getContentType() == null ? 0 : this.getContentType()
 						.hashCode());
-		result = 37 * result
-				+ (getYear() == null ? 0 : this.getYear().hashCode());
-		result = 37 * result
-				+ (getMonth() == null ? 0 : this.getMonth().hashCode());
-		result = 37 * result
-				+ (getDay() == null ? 0 : this.getDay().hashCode());
 		return result;
 	}
 

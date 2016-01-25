@@ -31,15 +31,6 @@
             <key-property name="contentType" type="java.lang.String">
                 <column name="content_type" length="16" />
             </key-property>
-            <key-property name="year" type="java.lang.String">
-                <column name="year" length="20" />
-            </key-property>
-            <key-property name="month" type="java.lang.String">
-                <column name="month" length="20" />
-            </key-property>
-            <key-property name="day" type="java.lang.String">
-                <column name="day" length="20" />
-            </key-property>
         </composite-id>
     </class>
 </hibernate-mapping>

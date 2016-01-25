@@ -7,7 +7,7 @@
 	<bean id="LoginAction" class="action.LoginAction">
 		<property name="login" ref="LoginService"></property>
 	</bean>
-	<bean id="registerAction" class="action.RegisterAction">
+	<bean id="RegisterAction" class="action.RegisterAction">
 		<property name="register" ref="RegisterService"></property>
 	</bean>
 </beans>

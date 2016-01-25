@@ -1,4 +1,3 @@
-
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"  %>
 
@@ -16,7 +15,7 @@
 	<jsp:include page="WEB-INF/common/scripts.html" flush="true" />
 	<script>
 	function clickRegister(){
-        window.location.href="/RuleEditor/registerb.action";
+        window.location.href="/MediaRetrivalSystem/register.jsp";
 
     }
 	</script>
