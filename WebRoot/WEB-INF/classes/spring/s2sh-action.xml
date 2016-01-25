@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans      
+       classpath:/org/springframework/beans/factory/xml/spring-beans-2.0.xsd"
+	default-lazy-init="true">
+	<bean id="LoginAction" class="action.LoginAction">
+		<property name="login" ref="LoginService"></property>
+	</bean>
+	<bean id="registerAction" class="action.RegisterAction">
+		<property name="register" ref="RegisterService"></property>
+	</bean>
+</beans>
